@@ -6,8 +6,8 @@ import Foundation
 
 // Specify where is the data
 let path = NSString(string: "~/dataset/").expandingTildeInPath
-let trainingDir = URL(fileURLWithPath: path).appendingPathComponent("training")
-let testDir = URL(fileURLWithPath: path).appendingPathComponent("test")
+let trainingDir = URL(fileURLWithPath: path).appendingPathComponent("Training")
+let testDir = URL(fileURLWithPath: path).appendingPathComponent("Test")
 
 // Create a mode
 let model = try MLImageClassifier(trainingData: .labeledDirectories(at: trainingDir))
